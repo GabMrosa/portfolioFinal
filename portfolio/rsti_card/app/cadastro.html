@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/4c950ce135.js" crossorigin="anonymous"></script>
+
+    <title>RSTI Card - Cadastro</title>
+</head>
+
+<body>
+    <!--Barra de navegação-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-sack-dollar"></i> RSTI Card  <small>/  Cadastro</small></a>
+        </nav>
+    </header>
+
+    <!--Corpo da página-->
+    <main>
+        <div class="container">
+
+            <!--Formulário-->
+            <form class="form" action="principal.html" method="post">
+                <div class="row">
+
+                    <!--Item formulário: Nome-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
+                        <label>Nome:</label>
+                        <input type="text" class="form-control" name="nome" required placeholder="Exemplo de Nome">
+                    </div>
+
+                    <!--Item formulário: Email-->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
+                        <label>E-mail:</label>
+                        <input type="email" class="form-control" name="email" required placeholder="exemplo@email.com">
+                    </div>
+
+                    <!--Item formulário: Data de nascimento-->
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3 form-group">
+                        <label>Data de nascimento:</label>
+                        <input type="date" class="form-control" name="dt_nscmnt" required>
+                    </div>
+
+                    <!--Item formulário: Telefone-->
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3 form-group">
+                        <label>Telefone:</label>
+                        <input type="text" class="form-control" name="telefone" required placeholder="(00)00 0000-0000">
+                    </div>
+                    
+                    <!--Item formulário: Senha-->
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3 form-group">
+                        <label>Senha:</label>
+                        <input type="password" class="form-control" name="telefone" required placeholder="Min. 6 digitos ">
+                    </div>
+
+                    <!--Botão de envio-->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+                        <p class="text-center">
+                            <button type="submit" class="btn btn-primary">
+                                Confirmar
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="mt-4 bg-light text-center">
+        <p>Desenvolvido por Gabrielzin - &COPY; 2022 - RSTI</p>
+    </footer>
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

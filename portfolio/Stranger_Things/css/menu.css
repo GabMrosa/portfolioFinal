@@ -1,0 +1,96 @@
+.menu{
+    float: left;
+    width: 252px;
+    height: 684px;
+    padding-top: 20px;
+    color: #e00707;
+    background-image:linear-gradient(to top,#000000,#2b1b21,#2b1b21,#472f38);
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px;
+    margin-bottom: 220px;
+
+    border-bottom: 2px solid #e00707;
+
+}
+
+
+nav{
+    color: #e00707;
+}
+
+
+nav ul{
+    list-style: none;
+    height: 100px;
+    
+}
+
+nav a{
+    background-image: linear-gradient(to bottom,#ffe4c4,#ffe4c4,#deb887);
+    border-radius: 10px;
+    margin:auto;
+    color: #e00707;
+    border: 2px solid #e00707;
+    box-shadow: 5px 5px 15px -8px #424040;
+    
+    margin-top: 25px;
+
+    
+
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 15px;
+    display: block;
+    width: 170px;
+    margin-left: -3px;
+
+    text-align: center;
+    font-size: 23px;
+    text-decoration: none;
+
+}
+
+.menu_press a:hover{
+    background-color: #ddcfbd;
+    border-radius: 10px;
+    margin:auto;
+    color: #e00707;
+    box-shadow: 0px 0px 20px 8px #e00707;
+
+    margin-top: 25px;
+    
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 15px;
+    display: block;
+    width: 190px;
+    height: 35px;
+    margin-left: -12px;
+
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.agora_em{
+    background-image: linear-gradient(to bottom,#ffe4c4,#ffe4c4,#ffe4c4,#deb887,#c59b64);
+    border-radius: 10px;
+    margin:auto;
+    color: #9e0909;
+    border: 2px solid #e00707;
+    box-shadow: 0px 0px 20px 5px #e00707;
+    
+    margin-top: 25px;
+
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 15px;
+    display: block;
+    width: 170px;
+    margin-left: -3px;
+
+    text-align: center;
+    font-size: 23px;
+    text-decoration: none;
+}

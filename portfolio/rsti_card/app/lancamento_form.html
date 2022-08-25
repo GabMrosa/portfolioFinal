@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/4c950ce135.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/carteira.css">
+
+
+    <title>RSTI Card - Lançamento</title>
+</head>
+
+<body>
+    <!--Barra de navegação-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-sack-dollar"></i> RSTI Card</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="principal.html"><i class="fa-solid fa-gauge-high"></i>
+                        Principal <span class="sr-only">(Página atual)</span></a>
+                    <a class="nav-item nav-link active" href="carteira_list.html"><i class="fa-solid fa-wallet"></i>
+                        Carteiras</a>
+                    <a class="nav-item nav-link active" href="lancamento_list.html"><i
+                            class="fa-solid fa-money-bill-1-wave"></i></i>
+                        Lançamentos</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link active">
+                        <i class="fa-solid fa-user"></i> Nome Usuário
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Corpo da página-->
+    <main>
+        <div class="container-fluid">
+            <!--Lançamento-->
+            <section class="mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center">
+                                <h2 class="text-primary">
+                                    <i class="fa-solid fa-money-bill-1-wave"></i> Lançamento
+                                </h2>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"></div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center form-group">
+                                <button type="button" onclick="javascript:history.go(-1);"
+                                    class="btn btn-outline-primary w-100">
+                                    <i class="fa-solid fa-rotate-left"></i> Voltar
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Formulário-->
+            <section class="mt-3">
+                <form action="lancamento_list.html" method="post">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <!--Tipo-Select-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
+                                    <label>Tipo de transação:</label>
+                                    <select name="tipo" class="form-control" required>
+                                        <option value="saída">Saída</option>
+                                        <option value="entrada">Entrada</option>
+                                    </select>
+                                </div>
+                                <!--Carteira-Select-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
+                                    <label>Tipo de transação:</label>
+                                    <select name="carteiras" class="form-control" required>
+                                        <option value="1">Carteira Física</option>
+                                        <option value="2">Bradesco</option>
+                                        <option value="3">Nubank</option>
+                                    </select>
+                                </div>
+                                <!--Motivo-Input-->
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3 form-group">
+                                    <label>Motivo da transação:</label>
+                                    <input type="text" class="form-control w-100" name="motivo" required>
+                                </div>
+                                <!--Valor-Input-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
+                                    <label>Valor:</label>
+                                    <input type="number" class="form-control w-100" name="valor" required>
+                                </div>
+                                <!--Data-Input-->
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
+                                    <label>Data:</label>
+                                    <input type="date" class="form-control w-100" name="valor" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-success btn-100"><i
+                                    class="fa-regular fa-floppy-disk"></i> Salvar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="mt-4 bg-light text-center">
+        <p>Desenvolvido por Gabrielzin - &COPY; 2022 - RSTI</p>
+    </footer>
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
